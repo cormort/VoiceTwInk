@@ -108,3 +108,5 @@ Temporary Items
 
 # Superpowers brainstorming visual companion session data
 .superpowers/ 
+# Local whisper models (large binaries; see docs/SETUP-zh-TW.md)
+models/
