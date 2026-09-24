@@ -8,6 +8,7 @@
   [![Fork of](https://img.shields.io/badge/fork%20of-Beingpax%2FVoiceInk-orange)](https://github.com/Beingpax/VoiceInk)
 
   <p><strong>繁體中文版</strong> → <a href="./README.zh-TW.md">README.zh-TW.md</a></p>
+  <p><strong>本機建置 + Breeze-ASR-25 設定</strong> → <a href="./docs/SETUP-zh-TW.md">docs/SETUP-zh-TW.md</a></p>
 </div>
 
 ---
