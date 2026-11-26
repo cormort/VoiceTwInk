@@ -119,21 +119,6 @@ Recommended:
 
 With these settings, mixed Chinese + English voice input is handled naturally — e.g., 「我覺得這個 implementation 很 elegant」 stays mixed, English technical terms preserved verbatim.
 
-## Android keyboard: Pinyin input
-
-The Android edition of VoiceTwInk (a separate repo, not public yet) ships a custom keyboard. Besides voice input, it does Hanyu Pinyin input: type `zhengfu` → 政府, no tones needed, prefix matching while typing, `v` for ü. It runs fully offline; the dictionaries are bundled in the APK and nothing goes over the network.
-
-| Dictionary | Source | Entries |
-|---|---|---|
-| Base vocabulary | Ministry of Education *Concised Mandarin Dictionary* × 4,808 common characters (CC BY-ND 3.0 TW) | ~43k |
-| Taiwan readings | Reading table from [rime-penglai (蓬萊韻)](https://github.com/jason5545/rime-penglai), keeping only Taiwan-sourced readings (MOE, McBopomofo, Penglai additions); mainland-standard readings are dropped (LGPL-3.0) | ~32k |
-| Everyday short words | Colloquial words from [rime/rime-essay](https://github.com/rime/rime-essay) that the dictionaries lack (你好, 中文, 我的); mainland terms (視頻, 軟件) and simplified→traditional conversion errors (于是, 下麵) are filtered out (LGPL-3.0) | ~7.3k |
-
-Ranking: exact match > how often you picked it > fewer characters > rime-essay frequency > common-character list.
-
-- **Character forms**: essay uses OpenCC's traditional forms (爲, 裏, 着). They are converted to Taiwan forms (為, 裡, 著) before counting; otherwise 因為 and 為 would be badly undercounted.
-- **Readings of single characters**: essay does not distinguish readings, so a character's count is split across its readings. For example, 紅 is read ㄍㄨㄥ only in 女紅, so typing `gong` no longer puts 紅 first.
-
 ## Status & scope
 
 - Personal fork, daily driver for the owner.
